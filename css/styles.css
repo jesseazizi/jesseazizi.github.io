@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-/* Mainly content on index.html */
+/* Top content on index.html */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -11,13 +11,15 @@ body {
     padding: 60px;
 }
 
+/* Bio on index.html */
 .hero-text {
     width: 50%;
 }
 
+/* Headshot on index.html */
 .hero-image img {
     width: 250px;
-    border-radius: 50%;
+    border-radius: 1%;
 }
 
 .navbar {
