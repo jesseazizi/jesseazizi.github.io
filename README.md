@@ -3,7 +3,7 @@
 Visit my portfolio [here](https://jesseazizi.github.io).
 
 ## About
-This is the Git repository for my portfolio website.
+This is the GitHub repository for my portfolio website.
 
 ## Project Structure
 ```
