@@ -24,7 +24,7 @@ portfolio-website/
     └── images/
 ```
 
-## BCS 377 questionnaire
+## BCS 377 Questionnaire
 <details>
 <summary>Part 1: Content</summary>
 
