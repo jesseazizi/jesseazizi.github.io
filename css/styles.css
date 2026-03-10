@@ -80,7 +80,7 @@ body {
     transform: scale(0.97);
 }
 
-/* Work experience */
+/* Header for each job entry */
 .job-header {
     display: flex;
     align-items: baseline;
@@ -92,6 +92,7 @@ body {
     margin: 0;
 }
 
+/* Dividers between job entries */
 .job-header div {
     color: #666;
     font-size: 14px;
@@ -101,4 +102,17 @@ body {
     content: "|";
     margin-left: 12px;
     color: #999;
+}
+
+/* School entries on education page*/
+.school {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Icons for each school */
+.school-image img {
+    width: 100px;
+    border-radius: 3%;
 }
