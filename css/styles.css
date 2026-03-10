@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* Mainly content on index.html */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -38,8 +39,4 @@ body {
 
 .navbar a:hover {
     color: #00bcd4;
-}
-
-.content {
-    padding: 40px;
 }
