@@ -13,7 +13,7 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="work.html">Work History</a></li>
+        <li><a href="work.html">Work Experience</a></li>
         <li><a href="education.html">Education</a></li>
     </ul>
 </nav>
@@ -22,9 +22,16 @@
 <section class="hero">
 
     <!-- Welcome header + bio -->
-    <div class="hero-text">
-        <h1>Welcome!</h1>
-        <p>My name is Jesse Azizi, and I'm a software expert studying web development and relational databases. This is my portfolio website.</p>
+    <div>
+        <!-- Welcome header -->
+        <div class="hero-header">
+            <h1>Welcome!</h1>
+        </div>
+
+        <!-- Welcome bio -->
+        <div class="hero-text">
+            <p>My name is Jesse Azizi, and I'm a software expert studying web development and relational databases. This is my portfolio website.</p>
+        </div>
     </div>
 
     <!-- Headshot -->
@@ -34,56 +41,45 @@
 
 </section>
 
-<!-- Body -->
+<!-- Content -->
 <section class="content">
 
-    <h2>Navigation</h2>
-    <p>Use the navigation bar at the top to access various different pages.</p>
+    <!-- Navigation section -->
+    <div class="navigation">
+        <h2>Navigation</h2>
+        <p>Use the navigation bar at the top to access various different pages.</p>
+    </div>
 
-    <!-- TODO: Add download links for resume as a pdf and word doc.
-    Also add a preview of the file right below.
-    Would be nice to link it directly from LinkedIn -->
-    <h2>Résumé</h2>
-    <p>Click here to download my resume.</p>
+    <!-- Resume section -->
+    <div class="resume">
+        <h2>Résumé</h2>
+        <!-- Download buttons -->
+        <p>
+            <a href="assets/resumes/pdf/2026-01-08 Jesse Azizi College Resume.pdf" class="button">Download résumé (.pdf)</a>
+            <a href="assets/resumes/docx/2026-01-08 Jesse Azizi College Resume.docx" class="button">Download résumé (.docx)</a>
+        </p>
+    </div>
+
+    <!-- Profile cards -->
+    <div class="connect">
+        <h2>Connect</h2>
+        
+        <!-- LinkedIn profile card -->
+        <!-- TODO: Currently does not work -->
+        <div class="badge-base LI-profile-badge"
+            data-locale="en_US"
+            data-size="medium"
+            data-theme="dark"
+            data-type="VERTICAL"
+            data-vanity="jesseazizi"
+            data-version="v1">
+            <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jesseazizi?trk=profile-badge">
+                Jesse Azizi
+            </a>
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+        </div>
+    </div>
 
 </section>
-
-<!-- Profile cards -->
-<section class="connect">
-
-    <h2>Connect With Me</h2>
-    <div class="social-cards">
-
-        <div class="card">
-            <section class="github-dashboard">
-                <h2>GitHub Dashboard</h2>
-                <div class="github-cards">
-                    <img src="https://github-readme-stats.vercel.app/api?username=jesseazizi&show_icons=true">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jesseazizi&layout=compact">
-                    <img src="https://streak-stats.demolab.com?user=jesseazizi">
-                </div>
-            </section>
-        </div>
-
-        <div class="card">
-            <section class="linkedin-profile">
-                <h2> LinkedIn Profile</h2>
-                <div class="badge-base LI-profile-badge"
-                    data-locale="en_US"
-                    data-size="large"
-                    data-theme="light"
-                    data-type="VERTICAL"
-                    data-vanity="jesseazizi"
-                    data-version="v1">
-                </div>
-            </section>
-            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>            
-        </div>
-
-    </div>
-    </section>
-
-    <script src="js/script.js"></script>
-
 </body>
 </html>

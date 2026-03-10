@@ -11,17 +11,33 @@ body {
     padding: 60px;
 }
 
+/* Welcome message on index.html */
+.hero-header {
+    width: 50%;
+    font-size: xx-large;
+}
+
 /* Bio on index.html */
 .hero-text {
-    width: 50%;
+    width: 70%;
+    font-size: medium;
 }
 
 /* Headshot on index.html */
 .hero-image img {
     width: 250px;
-    border-radius: 1%;
+    border-radius: 3%;
 }
 
+/* All other sections on index.html */
+.content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* controls spacing between sections */
+}
+
+/* Navigation bar */
 .navbar {
     background-color: #333;
     padding: 15px;
@@ -41,4 +57,25 @@ body {
 
 .navbar a:hover {
     color: #00bcd4;
+}
+
+/* Buttons */
+.button {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #00bcd4;
+}
+
+.button:active {
+    transform: scale(0.97);
 }
