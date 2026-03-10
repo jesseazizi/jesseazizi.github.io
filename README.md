@@ -1,6 +1,6 @@
 # jesseazizi.github.io
 
-Visit my portfolio [here]("https://jesseazizi.github.io").
+Visit my portfolio [here](https://jesseazizi.github.io).
 
 ## About
 This is the Git repository for my portfolio website.
