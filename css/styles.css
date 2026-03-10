@@ -79,3 +79,25 @@ body {
 .button:active {
     transform: scale(0.97);
 }
+
+.job-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.job-header h2 {
+    margin: 0;
+}
+
+.job-header div {
+    color: #666;
+    font-size: 14px;
+}
+
+.job-header div:not(:last-child)::after {
+    content: "|";
+    margin-left: 12px;
+    color: #999;
+}
