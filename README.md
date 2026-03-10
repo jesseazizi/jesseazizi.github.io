@@ -3,8 +3,28 @@
 Visit my portfolio [here]("https://jesseazizi.github.io").
 
 ## About
-This is the Git repository for my portfolio website. Below are sections detailing the Project 01 questionnaire for BCS 377:
+This is the Git repository for my portfolio website.
 
+## Project Structure
+```
+portfolio-website/
+│
+├── index.html        (Home page)
+├── projects.html
+├── work.html
+├── education.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+└── assets/
+    └── images/
+```
+
+## BCS 377 questionnaire
 <details>
 <summary>Part 1: Content</summary>
 
