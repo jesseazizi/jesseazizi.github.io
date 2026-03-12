@@ -116,3 +116,16 @@ body {
     width: 100px;
     border-radius: 3%;
 }
+
+/* Project entries on projects page */
+.project {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Images for each project */
+.project-image img {
+    width: 400px;
+    border-radius: 3%;
+}
