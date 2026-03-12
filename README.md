@@ -24,7 +24,7 @@ portfolio-website/
     └── images/
 ```
 ## Wireframe
-![Wireframe]('wireframe.jpeg')
+![Wireframe]('/wireframe.jpeg')
 
 ## BCS 377 Questionnaire
 <details>
