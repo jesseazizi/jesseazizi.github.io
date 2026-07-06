@@ -262,7 +262,8 @@ a {
 /* ---------- Work experience page ---------- */
 .job-header {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 12px;
     flex-wrap: wrap;
 }
@@ -271,15 +272,17 @@ a {
     margin: 0;
 }
 
-.job-header div {
+.job-employer {
     color: var(--color-text-muted);
     font-size: 14px;
+    font-style: italic;
 }
 
-.job-header div:not(:last-child)::after {
-    content: "|";
-    margin-left: 12px;
-    color: var(--color-border);
+.job-meta {
+    text-align: right;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    flex-shrink: 0;
 }
 
 .job-details {
@@ -299,6 +302,14 @@ a {
     align-items: center;
 }
 
+.school-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+}
+
 .school-image img {
     width: 90px;
     border-radius: 8px;
@@ -313,11 +324,35 @@ a {
     color: var(--color-text-muted);
 }
 
+.school-degree {
+    font-style: italic;
+}
+
+.school-meta {
+    text-align: right;
+    flex-shrink: 0;
+}
+
 /* ---------- Projects page ---------- */
 .project {
+    position: relative;
     display: flex;
     gap: 24px;
     align-items: center;
+}
+
+.project-github {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    color: var(--color-accent);
+}
+
+.project-github svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
 }
 
 .project-image img {
@@ -453,5 +488,29 @@ a {
 
     .project-image img {
         width: 100%;
+    }
+
+    .project-github {
+        position: static;
+        align-self: flex-end;
+        margin-bottom: 8px;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+
+    .job-meta {
+        order: -1;
+        text-align: left;
+    }
+
+    .school-header {
+        flex-direction: column;
+    }
+
+    .school-meta {
+        order: -1;
+        text-align: left;
     }
 }
