@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Work Experience</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience | Jesse Azizi</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2300bcd4'/%3E%3Ctext x='50' y='66' font-size='42' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EJA%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 </head>
 
-<body>
+<body data-page="work">
 
-<!-- Navigation bar -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="work.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">Jesse Azizi</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" data-page="home">Home</a></li>
+            <li><a href="projects.html" data-page="projects">Projects</a></li>
+            <li><a href="work.html" data-page="work">Work Experience</a></li>
+            <li><a href="education.html" data-page="education">Education</a></li>
+        </ul>
+
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
 </nav>
 
 <section class="content">
     <h1>Work Experience</h1>
 
     <!-- Opto-tech @ WP -->
-    <div class="job">
+    <div class="job card reveal">
         <div class="job-header">
             <h2>Optometric Technician</h2>
             <div>Warby Parker</div>
@@ -38,7 +57,7 @@
     </div>
 
     <!-- IS intern @ met opera-->
-    <div class="job">
+    <div class="job card reveal">
         <div class="job-header">
             <h2>Information Systems Intern</h2>
             <div>Metropolitan Opera</div>
@@ -55,7 +74,7 @@
     </div>
 
     <!-- Sales associate @ JCrew -->
-    <div class="job">
+    <div class="job card reveal">
         <div class="job-header">
             <h2>Seasonal Sales Associate</h2>
             <div>J.Crew</div>
@@ -73,7 +92,7 @@
     </div>
 
     <!-- Office assistant @ SGLCC -->
-    <div class="job">
+    <div class="job card reveal">
         <div class="job-header">
             <h2>Office Assistant</h2>
             <div>Penn State School Of Global Languages, Literatures, And Cultures</div>
@@ -89,7 +108,7 @@
     </div>
 
     <!-- DB manager @ mr bracelet -->
-    <div class="job">
+    <div class="job card reveal">
         <div class="job-header">
             <h2>Database Manager</h2>
             <div>MR BRACELET INC.</div>
@@ -105,5 +124,11 @@
     </div>
 
 </section>
+
+<footer class="site-footer">
+    Jesse Azizi &copy; <span id="year"></span>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

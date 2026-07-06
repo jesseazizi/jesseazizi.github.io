@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jesse Azizi</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2300bcd4'/%3E%3Ctext x='50' y='66' font-size='42' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EJA%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 </head>
 
-<body>
+<body data-page="projects">
 
-<!-- Navbar at the top of the page -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="work.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">Jesse Azizi</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" data-page="home">Home</a></li>
+            <li><a href="projects.html" data-page="projects">Projects</a></li>
+            <li><a href="work.html" data-page="work">Work Experience</a></li>
+            <li><a href="education.html" data-page="education">Education</a></li>
+        </ul>
+
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
 </nav>
 
 <section class="content">
     <h1>Projects</h1>
-    
+
     <!-- CSC 325 group proj -->
-    <div class="project">
+    <div class="project card reveal">
         <div class="project-image">
-            <img src="assets/images/project_images/CSC325_image.png">
+            <img src="assets/images/project_images/CSC325_image.png" alt="Screenshot of the software engineering group project">
         </div>
         <div class="project-details">
             <h2>Software Engineering Group Project</h2>
             <p>Jan 2025 - May 2025</p>
-            <p><a href="https://github.com/PracticalEscapement/CSC_325_Group_Project">GitHub Repository</a></p>
+            <p><a href="https://github.com/PracticalEscapement/CSC_325_Group_Project" target="_blank">GitHub Repository</a></p>
             <ul>
                 <li>Built a full-stack social media web application for STEM students.</li>
                 <li>Used Python, Flask, and JavaScript to craft the frontend and the backend.</li>
@@ -39,14 +58,14 @@
     </div>
 
     <!-- touchscreen controllers -->
-    <div class="project">
+    <div class="project card reveal">
         <div class="project-image">
-            <img src="assets/images/project_images/touchscreen_image.jpg">
+            <img src="assets/images/project_images/touchscreen_image.jpg" alt="Touchscreen controller design mockup">
         </div>
         <div class="project-details">
             <h2>Touchscreen Controller Designs</h2>
             <p>May 2024 - Jun 2024</p>
-            <p><a href="https://github.com/jesseazizi/delta-skins">GitHub Repository</a></p>
+            <p><a href="https://github.com/jesseazizi/delta-skins" target="_blank">GitHub Repository</a></p>
             <ul>
                 <li>Designed touchscreen controllers for retro game emulators.</li>
                 <li>Used Visual Studio Code and Adobe Illustrator to ensure compatibility with multiple smartphones.</li>
@@ -57,5 +76,10 @@
 
 </section>
 
+<footer class="site-footer">
+    Jesse Azizi &copy; <span id="year"></span>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

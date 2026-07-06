@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Jesse Azizi</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2300bcd4'/%3E%3Ctext x='50' y='66' font-size='42' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EJA%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 </head>
 
-<body>
+<body data-page="education">
 
-<!-- Navbar at the top of the page -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="work.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">Jesse Azizi</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" data-page="home">Home</a></li>
+            <li><a href="projects.html" data-page="projects">Projects</a></li>
+            <li><a href="work.html" data-page="work">Work Experience</a></li>
+            <li><a href="education.html" data-page="education">Education</a></li>
+        </ul>
+
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
 </nav>
 
 <section class="content">
     <h1>Education</h1>
 
     <!-- FSC -->
-    <div class="school">
+    <div class="school card reveal">
         <div class="school-image">
             <img src="assets/images/school_images/FSC_logo.jpg" alt="Farmingdale State College logo">
         </div>
@@ -34,11 +53,11 @@
     </div>
 
     <!-- PSU -->
-    <div class="school">
+    <div class="school card reveal">
         <div class="school-image">
             <img src="assets/images/school_images/PSU_logo.jpg" alt="Penn State University logo">
         </div>
-        
+
         <div class="school-header">
             <h2>Penn State University</h2>
             <p>64 credits earned towards Bachelor's of Science Degree in Data Science</p>
@@ -48,5 +67,10 @@
 
 </section>
 
+<footer class="site-footer">
+    Jesse Azizi &copy; <span id="year"></span>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
