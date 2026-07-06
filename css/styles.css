@@ -89,6 +89,7 @@ a {
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
+    font-family: Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 .nav-links {
@@ -167,6 +168,7 @@ a {
 .hero-header h1 {
     font-size: 2.75rem;
     margin: 0 0 16px;
+    font-family: Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 .hero-text p {
@@ -195,6 +197,7 @@ a {
 
 .content > h1 {
     margin-bottom: 0;
+    font-family: Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 /* Reusable card look for panels, jobs, schools, projects */
