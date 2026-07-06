@@ -115,23 +115,12 @@ a {
     background-color: rgba(0, 188, 212, 0.08);
 }
 
-.theme-toggle,
+/* Hamburger icon, hidden until small screens */
 .nav-toggle {
     background: none;
     border: none;
     cursor: pointer;
     color: white;
-}
-
-.theme-toggle {
-    font-size: 20px;
-    line-height: 1;
-    padding: 4px 8px;
-    margin-top: auto;
-}
-
-/* Hamburger icon, hidden until small screens */
-.nav-toggle {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -335,11 +324,31 @@ a {
 
 /* ---------- Footer ---------- */
 .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     text-align: center;
     padding: 24px;
     color: var(--color-text-muted);
     font-size: 14px;
     border-top: 1px solid var(--color-border);
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 1;
+    width: 36px;
+    height: 36px;
+}
+
+.theme-toggle:hover {
+    border-color: var(--color-accent);
 }
 
 /* ---------- Responsive ---------- */
@@ -377,6 +386,7 @@ a {
 
     .nav-toggle {
         display: flex;
+        margin-left: auto;
     }
 
     .nav-links {
@@ -411,10 +421,6 @@ a {
 
     .nav-links li {
         padding: 10px 0;
-    }
-
-    .theme-toggle {
-        margin-top: 0;
     }
 
     .hero {
